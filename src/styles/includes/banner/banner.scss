@@ -1,0 +1,100 @@
+@import "header";
+@import "content";
+
+.banner{
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  background-color: #EEF4F8;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.money-bg-tl,
+.money-bg-tr,
+.bg-nastya-mobile,
+.bg-nastya-desktop{
+  top: 0;
+  position: absolute;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.money-bg-tl{
+  left: 0;
+  width: 140px;
+  height: 106px;
+  background-image: url('../img/money_01 1.png');
+  -webkit-background-size: contain;
+  background-size: contain;
+
+  @media screen and (min-width: $mediaWidthTabletHorizontal){
+    width: 18%;
+    height: 270px;
+    background-image: url('../img/money_01 1d.png');
+  }
+
+  @media screen and (min-width: $mediaWidthLaptop){
+    width: 22%;
+    height: 360px;
+    background-image: url('../img/money_01 1d.png');
+  }
+}
+
+.money-bg-tr{
+  right: 0;
+  width: 139px;
+  height: 106px;
+  background-image: url('../img/money_02 1.png');
+  -webkit-background-size: contain;
+  background-size: contain;
+
+  @media screen and (min-width: $mediaWidthTabletHorizontal){
+    width: 18%;
+    height: 270px;
+    background-image: url('../img/money_02 1d.png');
+  }
+
+  @media screen and (min-width: $mediaWidthLaptop){
+    width: 22%;
+    height: 360px;
+    background-image: url('../img/money_02 1d.png');
+  }
+}
+
+.bg-nastya-mobile{
+  top: 6px;
+  left: calc(50% - 104px);
+  width: 208px;
+  height: 574px;
+
+  @media screen and (min-width: $mediaWidthTablet){
+    top: 43px;
+  }
+
+  @media screen and (min-width: $mediaWidthTabletHorizontal){
+    display: none;
+  }
+}
+
+.bg-nastya-desktop{
+  right: 15%;
+  width: 538px;
+
+  @media screen and (max-width: $mediaWidthTabletHorizontal){
+    display: none;
+  }
+
+  @media screen and (min-width: $mediaWidthTabletHorizontal){
+    top: 50px;
+    right: 7%;
+  }
+
+  @media screen and (min-width: $mediaWidthLaptop){
+    top: 0px;
+    right: 10%;
+  }
+}
+

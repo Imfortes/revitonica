@@ -1,0 +1,54 @@
+.header{
+  padding-top: 24px;
+  display: none;
+
+  @media screen and (min-width: $mediaWidthTablet){
+    display: flex;
+  }
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 100;
+
+  &__prev{
+    margin-right: 37px;
+
+    &-icon{
+      width: 18px;
+      height: 10px;
+    }
+  }
+
+  &__menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    &-item {
+      margin: 0 10px;
+      position: relative;
+
+      &-link{
+        color: #2C3E50;
+
+        &:hover{
+          color: #E1AA23;
+        }
+      }
+    }
+    &-item:after{
+      content: '/';
+      position: absolute;
+      right: -13px;
+      top: 1px;
+    }
+    &-item:last-child:after{
+      content: '';
+    }
+
+  }
+}
